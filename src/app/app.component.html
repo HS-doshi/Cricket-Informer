@@ -1,1 +1,16 @@
-<h2>Cricket Informer App! Using Angular & Spring Boot Database! Learning! 👉</h2>
+<header class="bg-blue-500 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-2xl font-bold" style="cursor: pointer;" (click)="goToHome()">
+      Cricket Informer
+    </div>
+    <nav class="flex space-x-4">
+      <a href="#" class="hover:underline" [routerLink]="['home']" routerLinkActive="router-link-active" >Home</a>
+      <a href="#" class="hover:underline" [routerLink]="'live'">Live Matches</a>
+      <a href="#" class="hover:underline" [routerLink]="'history'">History</a>
+      <a href="#" class="hover:underline" [routerLink]="'point-table'">Point Table</a>
+    </nav>
+    <div></div>
+  </div>
+</header>
+<router-outlet></router-outlet>
+<p>Footer</p>
