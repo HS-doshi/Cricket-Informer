@@ -1,1 +1,21 @@
-<p>match-card works!</p>
+@if (match) {
+<div class="hover:bg-blue-300 transition-all rounded-xl cursor-pointer border-b-blue-500 border-b-6 card border p-4 mt-3 shadow-lg">
+  <div class="header border-b-2 pb-3 border-b-gray-600">
+    <h1 class="font-bold">{{match.email | json}}</h1>
+    <p>{{match.name | json}}</p>
+  </div>
+  <div class="body mt-2">
+    <div class="flex justify-between px-1">
+        <p class="font-bold">{{match.id | json}}</p>
+        <p class="font-bold">242/2</p>
+    </div>
+    <div class="flex justify-between px-1">
+        <p class="font-bold">ENG</p>
+        <p class="font-bold">240/6</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="text-red-600">{{match.body}}</p>
+  </div>
+</div>
+}

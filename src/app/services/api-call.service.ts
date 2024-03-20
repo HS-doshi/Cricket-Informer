@@ -13,7 +13,7 @@ export class ApiCallService {
     return this.http.get(`${environment.apiUrl}/posts/1/`)
   }
   getLivematches(){
-    return this.http.get(`${environment.apiUrl}/comments`)
+    return this.http.get(`${environment.apiUrl}/posts/1/comments`)
   }
   getPointTable()
   {
