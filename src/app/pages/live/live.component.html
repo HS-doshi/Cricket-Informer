@@ -1,7 +1,18 @@
 <div class="container">
-  <div class="header">
-    <h1>Live Commentry</h1>
-    <button class="btn border-t-cyan-600">Refresh</button>
-  </div>
+    <h1 class="text-4xl font-extrabold text-gray-700">Live Cricket Score</h1>
+    <!-- <button class="btn border-t-cyan-600">Refresh</button> -->
 
+    @for (item of liveMatches;track $index)
+    {
+      <div>
+        <app-match-card></app-match-card>
+      </div>
+
+        {{item.email}}
+        <br>
+        {{$index}}
+    }
+    @empty {
+      There is no Data!
+    }
 </div>

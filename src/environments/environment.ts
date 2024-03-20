@@ -1,5 +1,5 @@
 export const environment = {
-  apiUrl : 'http://www.crickinformer.com'
+  apiUrl : 'https://jsonplaceholder.typicode.com/'
 
   // This url will run when on production is going on.
 };
